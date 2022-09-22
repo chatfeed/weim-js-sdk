@@ -1,5 +1,5 @@
 import {  Emitter } from "./emitter";
-import { WebsocketResponse, Msg, userInfo } from "./types";
+import { WebsocketResponse, Msg, userInfo, InitConfig } from "./types";
 import {IMCommand, IMEvents} from "./constants"
 import { createWorker, stopWorker, uuid } from "./utils";
 
@@ -19,12 +19,13 @@ export default class WEIMSDK extends Emitter{
     private timer:NodeJS.Timer | undefined = undefined;
     private worker:Worker | null = null;
     private userInfo:userInfo;
-    constructor(domain:string,mid:Number,platform:string,userInfo:userInfo){
+    constructor(cfg:InitConfig){
         super();
-        this.domain = domain;
-        this.mid = mid;
-        this.platform = platform;
-        this.userInfo = userInfo;
+        this.wsUrl = cfg.wsUrl;
+        this.domain = cfg.domain;
+        this.mid = cfg.mid;
+        this.platform = cfg.platform;
+        this.userInfo = cfg.userInfo;
     }
     connect(){
         return new Promise<WebsocketResponse>((resolve,reject) =>{

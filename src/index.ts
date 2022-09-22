@@ -1,6 +1,8 @@
 import WEIMSDK from './weim';
-
+import {IMCommand, IMEvents } from './constants';
 
 export{
-    WEIMSDK
+    WEIMSDK,
+    IMCommand,
+    IMEvents
 }

@@ -1,0 +1,36 @@
+{
+  "name": "weim-js-sdk",
+  "version": "1.0.1",
+  "description": "weim js sdk",
+  "main": "index.js",
+  "module": "index.esm.js",
+  "types": "index.d.ts",
+  "unpkg": "index.umd.js",
+  "jsdelivr": "index.umd.js",
+  "exports": {
+    ".": {
+      "import": "./index.esm.js",
+      "require": "./index.js"
+    }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chatfeed/weim-js-sdk.git"
+  },
+  "bugs": {
+    "url": "https://github.com/chatfeed/weim-js-sdk/issues"
+  },
+  "homepage": "https://github.com/chatfeed/weim-js-sdk#readme",
+  "keywords": [
+    "im"
+  ],
+  "author": "chatfeed@gmail.com",
+  "license": "ISC",
+  "devDependencies": {
+    "microbundle": "^0.13.3",
+    "typescript": "^4.4.3"
+  },
+}
