@@ -1,14 +1,14 @@
 {
   "name": "weim-js-sdk",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "weim js sdk",
   "main": "dist/index.js",
-  "source":"src/index.ts",
+  "source": "src/index.ts",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build":"rm -rf ./dist & microbundle",
+    "build": "rm -rf ./dist & microbundle",
     "prepare": "cp -r ./src/types ./dist & rm ./dist/*.map & cp ./tmp/* ./dist",
-    "dev":"microbundle watch",
+    "dev": "microbundle watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

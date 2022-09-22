@@ -1,6 +1,6 @@
 enum IMCommand {
     LOGIN="Login",
-    LOGOUT="Logout"
+    LOGOUT="Logout",
     GETLOGINSTATUS="GetLoginStatus"
 }
 

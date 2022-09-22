@@ -22,4 +22,3 @@ function create(fun: any) {
       console.log(err);
     }
   };
-s  
